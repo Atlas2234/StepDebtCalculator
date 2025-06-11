@@ -1,1 +1,15 @@
-<p>user-input works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+        <div class="input-field">
+            <label for="total-steps-taken">Total Steps Taken</label>
+            <input id="total-steps-taken" name="total-steps-taken" type="number" [(ngModel)]="enteredSteps">
+        </div>
+        <div class="input-field">
+            <label for="number-of-days">Day Number</label>
+            <input id="number-of-days" name="number-of-days" type="number" [(ngModel)]="enteredDayNumber">
+        </div>
+    </div>
+    <div class="submit">
+        <button>Calculate</button>
+    </div>
+</form>
