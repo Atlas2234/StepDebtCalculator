@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.header {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: azure;
+    border-style: solid;
+    max-height: 50vh;
+    min-height: 30vh;
+    max-width: 30vw;
+    min-width: 500px;
+    margin-top: 5vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    padding: 5vh 2vw;
+}
+
+.output {
+    margin-top: 5vh;
+
+}
+
+@font-face {
+    font-family: cute;
+    src: url(../../public/fonts/BubblegumSans-Regular.ttf) format('truetype');
+}
+
+@media (max-width: 1000px) {
+    .calculator {
+        min-width: 50vw;
+        max-width: 60vw;
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+}

@@ -1,15 +1,15 @@
 <form (ngSubmit)="onSubmit()">
     <div class="input-group">
-        <div class="input-field">
-            <label for="total-steps-taken">Total Steps Taken</label>
-            <input id="total-steps-taken" name="total-steps-taken" type="number" [(ngModel)]="enteredSteps">
+        <div class="input-field" id="first-input">
+            <label for="total-steps-taken" class="label">Total Steps Taken</label>
+            <input id="total-steps-taken" name="total-steps-taken" type="number" class="input" [(ngModel)]="enteredSteps">
         </div>
         <div class="input-field">
-            <label for="number-of-days">Day Number</label>
-            <input id="number-of-days" name="number-of-days" type="number" [(ngModel)]="enteredDayNumber">
+            <label for="number-of-days" class="label">Day Number</label>
+            <input id="number-of-days" name="number-of-days" type="number" class="input" [(ngModel)]="enteredDayNumber">
         </div>
     </div>
     <div class="submit">
-        <button>Calculate</button>
+        <button>Calculate!</button>
     </div>
 </form>

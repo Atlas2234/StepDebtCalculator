@@ -1,0 +1,8 @@
+h1 {
+    font-family: cute, sans-serif;
+    color: rgb(250, 250, 250);
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+}

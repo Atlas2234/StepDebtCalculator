@@ -1,0 +1,84 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  border-style: none;
+  background-color: azure;
+  border-radius: 5px;
+  padding: 0.8vh 0.5vw;
+  max-width: 7vw;
+  color: pink;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20vw;
+    max-width: 20vw;
+    min-height: 5vh;
+    margin-top: 1vh;
+}
+
+ #first-input {
+    margin-top: 0vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    margin-top: 3vh;
+}
+
+button {
+    border-style: solid;
+    border-color: azure;
+    border-radius: 5px;
+    padding: 1.5vh 1vw;
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: azure;
+    color: pink;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .input-field {
+        min-width: 40vw;
+        max-width: 50vw;
+        font-size: 0.9em;
+    }
+
+    input[type="number"] {
+        max-width: 15vw;
+        min-width: 10vw;
+    }
+}
